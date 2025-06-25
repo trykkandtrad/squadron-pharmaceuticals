@@ -1,0 +1,1150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+}
+h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 0;
+}
+:root {
+    --main-color: #063E77;
+    --primary-color: #E85707;
+    --text-color: #666;
+    --white-color: #fff;
+    --black-color: #000;
+    --main-font: "Open Sans", sans-serif;
+    --primary-font: "Lato", sans-serif;
+	--bg-color: #F7F7F7;
+}
+.container {
+    max-width: 1420px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+p {
+	margin-bottom: 0;
+}
+input:focus-visible {
+	outline: none;
+}
+/* header css start */
+
+.top-border {
+    display: flex;
+    height: 20px;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+.header {
+	padding: 20px 0px;
+}
+.header-content {
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+}
+.logo a img {
+    height: 63px;
+}
+.h-company-info {
+	display: flex;
+	align-items: center;
+}
+.h-company-info {
+	display: flex;
+	align-items: center;
+}
+.h-call {
+    margin-right: 20px;
+}
+.h-call, .h-mail {
+	display: flex;
+    align-items: center;
+}
+.call-content , .mail-content{
+	display: flex;
+	flex-direction: column;
+    margin-left: 10px;
+}
+.call-content small, .mail-content small {
+	font-size: 14px;
+}
+.call-content a, .mail-content a {
+	font-size: 16px;
+    color: var(--black-color);
+}
+.call-content a:hover, .mail-content a:hover {
+    color: var(--primary-color);
+}
+
+.navbar-content {
+	background-image: linear-gradient(to right, #186eae, #1462a0, #105592, #0b4a85, #063e77);
+    padding: 15px 0;
+}
+.nav-link {
+	padding: 0 !important;
+}
+.nav-item .nav-link {
+	font-size: 17px;
+	margin-right: 50px;
+	color: var(--white-color);
+	font-weight: 400;
+    transition: 0.5s ease-in-out;
+	font-weight: 500;
+}
+.nav-item .nav-link.active, .nav-item .nav-link:hover {
+    color: var(--primary-color);
+}
+.navbar-toggler-icon {
+	background: var(--main-color);
+	position: relative;
+	height: 2px;
+}
+.navbar-toggler-icon::before {
+	content: '';
+	position: absolute;
+	height: 2px;
+	width: 1.5em;
+	top: -8px;
+	background-color: var(--main-color);
+	left: 0;
+}
+.navbar-toggler-icon::after {
+	content: '';
+	position: absolute;
+	height: 2px;
+	width: 1.5em;
+	bottom: -8px;
+	background-color: var(--main-color);
+	left: 0;
+}
+.navbar-toggler:focus-visible,.navbar-toggler-icon:focus-visible {
+	outline: none;
+}
+.navbar-toggler:focus {
+	box-shadow: unset;
+}
+
+/* header css end */
+
+/* banner section start */
+
+.banner-section {
+	display: flex;
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+	position: relative;
+}
+.banner-content {
+    color: var(--white-color);
+    font-family: var(--primary-font);
+}
+.banner-content h1 {
+	font-size: 50px;
+	font-weight: 900;
+}
+.banner-content span {
+	font-size: 24px;
+}
+
+/* banner section end */
+
+/* main about section css start */
+
+.main-about-section {
+	padding: 50px 0;
+}
+.section-title h3 {
+	font-size: 36px;
+	font-weight: 900;
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+}
+.text-normal {
+    text-transform: none !important;
+}
+.section-title h3 span {
+    color: var(--main-color);
+}
+.tagline {
+	font-size: 25px;
+	margin: 10px 0;
+	font-family: var(--primary-font);
+	color: var(--text-color);
+	margin-right: 30px;
+}
+.section-title p {
+    font-size: 17px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+.section-title p b {
+    color: var(--primary-color);
+    font-weight: 400;
+}
+.section-title a {
+	font-size: 18px;
+	color: var(--primary-color);
+	padding: 10px 25px;
+	border: 2px solid var(--primary-color);
+	font-family: var(--primary-font);
+	font-weight: 600;
+	display: inline-flex;
+    transition: all 0.5s;
+}
+.section-title a:hover {
+    box-shadow: inset 5em 0 0 0 var(--primary-color), inset -5em 0 0 0 var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white-color);
+}
+.about-right-image img {
+	max-width: 100%;
+}
+
+/* main about section css end */
+
+/* business connect section start */
+
+.business-connect {
+	padding: 50px 0;
+	background: #f7f7f7;
+}
+.business-box {
+	margin-top: 40px;
+	padding: 0px 40px;
+	background: var(--primary-color);
+	border-radius: 50px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 350px;
+    position: relative;
+    -webkit-transition: border-color 0.6s ease, background 0.6s ease;
+    transition: border-color 0.6s ease, background 0.6s ease;
+    z-index: 0;
+    overflow: hidden;
+}
+.business-box:before {
+    background-color: var(--main-color);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+
+.business-box:hover:before {
+    top: 0;
+}
+
+.business-box:hover{
+  color: var(--white-color);
+  transition:0.25s;
+}
+
+.business-box:after {
+    position: absolute;
+    right: 2.34375rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%) translateX(50%);
+    -ms-transform: translateY(-50%) translateX(50%);
+    transform: translateY(-50%) translateX(50%);
+}
+.icon-round-box {
+	width: 120px;
+	height: 120px;
+	background: var(--white-color);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.icon-round-box img{
+    max-height: 90%;
+}
+.b-c-text {
+	font-size: 19px;
+	color: var(--white-color);
+	margin-top: 25px;
+}
+
+/* business connect section end */
+
+/* business key element css start */
+
+.business-key-elements {
+    padding: 50px 0;
+}
+.business-key-elements-box {
+	margin-top: 50px;
+	box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+	border-radius: 10px;
+}
+.key-image {
+	display: flex;
+	height: 250px;
+	overflow: hidden;
+}
+.key-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.b-k-element-content {
+	padding: 20px;
+    height: 200px;
+    overflow: hidden;
+}
+.b-k-element-content h4 {
+	font-size: 24px;
+	font-weight: 900;
+	text-transform: uppercase;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	min-height: 60px;
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+}
+.b-k-element-content h4 .key-box-title {
+	color: var(--main-color);
+}
+.b-k-element-content p {
+	font-size: 17px;
+	margin: 5px 0 10px;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+    color: var(--text-color);
+}
+.b-k-element-content a {
+	font-size: 20px;
+	font-weight: 600;
+    color: var(--primary-color);
+}
+.b-k-element-content a img {
+    margin-left: 5px;
+    transition: 0.3s ease-in-out;
+}
+.b-k-element-content a:hover {
+    color: var(--main-color);
+}
+.b-k-element-content a:hover > img {
+    margin-left: 8px;
+    filter: invert(16%) sepia(40%) saturate(3854%) hue-rotate(196deg) brightness(97%) contrast(95%);
+}
+
+/* business key element css end */
+
+/* five whys css start */
+
+.five-whys-section {
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0;
+}
+.five-whys-content h4 {
+    font-size: 26px;
+    color: var(--white-color);
+    font-family: var(--primary-font);
+    font-weight: 600;
+}
+.five-whys-content ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+.five-whys-content ul li {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	font-size: 19px;
+	color: var(--white-color);
+	font-weight: normal;
+}
+.five-whys-content ul li img {
+	margin-right: 20px;
+}
+
+/* five whys css end */
+
+/*  Our accreditation section css start  */
+
+.our-accreditation {
+	padding: 50px 0;
+}
+.certification-box {
+	margin-top: 50px;
+	text-align: center;
+}
+.certification-box span {
+	height: 300px;
+	background: var(--white-color);
+	box-shadow: 0 0px 10px rgba(0,0,0,0.25);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px 10px 0 0;
+	overflow: hidden;
+    padding: 20px 0;
+}
+.certificate-name {
+	margin-top: 25px;
+	font-size: 22px;
+	font-weight: 600;
+    color: var(--main-color);
+}
+
+/*  Our accreditation section css end  */
+
+/*  Counter Section CSS Start */
+
+.counter-section {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0;
+}
+.counter-content {
+	display: flex;
+	align-items: center;
+}
+.counter-icon {
+	margin-right: 10px;
+}
+.counter-text .count {
+	font-size: 40px;
+	color: var(--white-color);
+    font-weight: 900;
+}
+.counter-plus-icon {
+    font-size: 40px;
+	color: var(--white-color);
+    font-weight: 900;
+}
+.counter-b-text {
+	display: flex;
+	font-size: 17px;
+	color: var(--white-color);
+    display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+/*  Counter Section CSS end */
+
+/* happy customer css start */
+
+.happy-customer {
+    padding: 50px 0;
+}
+.happy-customer-slider {
+    margin-top: 50px;
+}
+
+/* happy customer css end */
+
+/* quick connect css start */
+
+.quick-connect {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 0;
+}
+.form-quick-connect {
+	margin-top: 30px;
+}
+.form-quick-connect input {
+	border: 1px solid var(--primary-color);
+    font-size: 15px;
+	padding: 10px;
+}
+.form-quick-connect textarea {
+	border: 1px solid var(--primary-color);
+    font-size: 15px;
+    resize: none;
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    padding: 10px;
+}
+textarea:focus-visible {
+	outline: none;
+}
+.form-control:focus-visible {
+	outline: none;
+}
+.form-control:focus {
+	box-shadow: unset;
+}
+.form-quick-connect button , .form-quick-connect input.btn.btn-primary{
+	font-size: 18px;
+	padding: 5px 25px;
+	border: 2px solid var(--primary-color);
+	font-family: var(--primary-font);
+	font-weight: 600;
+	transition: all 0.5s;
+	background: var(--primary-color);
+	color: var(--white-color);
+	text-transform: uppercase;
+}
+.form-quick-connect button:hover , .form-quick-connect input.btn.btn-primary:hover {
+	box-shadow: inset 5em 0 0 0 var(--white-color), inset -5em 0 0 0 var(--white-color);
+	border-color: var(--white-color);
+	color: var(--primary-color);
+}
+.footer-section {
+	background: #0A142F;
+    padding: 50px 0;
+}
+
+/* quick connect css end */
+
+/* footer start */
+
+.f-description {
+	font-size: 15px;
+	color: #fff;
+	margin-top: 20px;
+	font-weight: 300;
+}
+.company-info {
+	list-style-type: none;
+	padding-left: 0;
+}
+.company-info li {
+	margin-top: 10px;
+}
+.company-info li i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+.company-info li a {
+	font-size: 15px;
+	color: var(--white-color);
+}
+.company-info li a:hover {
+    color: var(--primary-color);
+}
+.f-title h5 {
+	font-size: 16px;
+	color: var(--primary-color);
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+ul.f-link {
+	padding-left: 13px;
+}
+ul.f-link li::marker {
+    color: var(--primary-color);
+}
+ul.f-link li {
+    margin-top: 10px;
+}
+ul.f-link li a {
+    color: var(--white-color);
+    font-size: 15px;
+}
+ul.f-link li a:hover {
+    color: var(--primary-color);
+}
+.f-bottom {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid var(--text-color);
+}
+.copyright {
+	font-size: 14px;
+	color: var(--white-color);
+}
+.copyright span {
+    color: var(--primary-color);
+}
+.f-social-icon {
+	list-style-type: none;
+	padding-left: 0;
+	display: flex;
+	align-items: center;
+	margin-bottom: 0;
+}
+.f-social-icon li {
+	margin-left: 10px;
+}
+.f-social-icon li:first-child {
+	margin-left: 0;
+}
+.f-social-icon {
+	justify-content: flex-end;
+}
+
+/* footer end */
+
+/* accordian services and career page css start */
+
+.why-choose-accordian {
+	margin-top: 30px;
+}
+.accordion-button::after {
+	flex-shrink: 0;
+	width: 17px;
+	height: 4px;
+}
+.accordion-button:not(.collapsed),
+.accordion-button:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: none;
+  background-color: transparent;
+}
+.accordion-button::after {
+  background-image: url(../images/minus-icon.svg) !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.accordion-button.collapsed::after {
+  background-image: url(../images/plus-icon.svg) !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 1rem;
+  height: 1rem;
+}
+.accordion-button, .accordion-body {
+	padding-left: 0;
+	padding-right: 0;
+}
+.accordion-button {
+	 font-weight: 600;
+}
+.accordion-button:not(.collapsed) {
+	color:var(--primary-color);
+}
+.accordion-body a {
+	color: var(--primary-color);
+}
+.accordion-body a:hover {
+	color: var(--main-color);
+}
+.services-portfolio-box-modal {
+	text-align: left !important;
+}
+.services-portfolio-box-modal li {
+	margin: 10px 0 0;
+	color: var(--text-color);
+}
+.services-portfolio-box-modal li b{
+	color: var(--primary-color);
+}
+
+
+/* accordian services and career page css end */
+
+/* inner banner css start */
+
+.inner-banner {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	height: 400px;
+}
+.inner-banner h3 {
+	font-size: 30px;
+	color: var(--white-color);
+	font-weight: 600;
+}
+.breadcrumb {
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+.breadcrumb .breadcrumb-item a {
+	color: var(--white-color);
+}
+.breadcrumb .breadcrumb-item {
+	font-size: 20px;
+}
+.breadcrumb .breadcrumb-item.active {
+	color: var(--primary-color);
+	font-weight: 600;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+	color: var(--white-color);
+}
+
+/* inner banner css end */
+
+/* company overview section css start */
+
+.company-overview, .services-overview {
+	padding: 50px 0;
+}
+.company-overview-info {
+	margin-top: 50px;
+}
+.company-information p, .company-information-more-detail p , .services-overview p , .services-information-more-detail p {
+	font-size: 18px;
+	margin-bottom: 20px;
+	color: var(--text-color);
+}
+.company-information-more-detail p {
+	margin-bottom: 0;
+	margin-top: 20px;
+}
+.company-image img {
+	width: 100%;
+}
+/* company overview section css end */
+
+/* mission vison and values section css start */
+
+.mission-section {
+	padding: 50px 0;
+	background-color: var(--bg-color);
+}
+.c-info-box-content {
+	background: #fff;
+	padding: 20px;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 0 0px 10px rgba(0,0,0,0.25);
+	height: 340px;
+}
+.c-info-box-content h5 {
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-top: 20px;
+	color: var(--primary-color);
+	font-family: var(--primary-font);
+}
+.c-info-box-content h5 span {
+	color: var(--main-color)
+}
+.c-info-box-content p {
+	font-size: 18px;
+	color: var(--text-color);
+	margin-top: 20px;
+	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+/* mission vison and values section css end */
+
+/* core principle section css start */
+
+.core-principle {
+	padding: 50px 0;
+}
+.core-priciples-bullets ul {
+	padding-left: 12px;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+.core-priciples-bullets ul li::marker {
+	color: var(--primary-color);
+}
+.core-priciples-bullets ul li {
+	font-size: 18px;
+	color: var(--text-color);
+	margin-top: 10px;
+}
+.core-priciples-bullets ul li b {
+	color: var(--primary-color);
+}
+.core-principle-image img {
+	width: 100%;
+}
+
+/* core principle section css end */
+
+/* founder and ceo section css start */
+
+.company-about {
+	padding: 50px 0;
+	background-color: var(--bg-color);
+}
+.company-about-detail h4 {
+	font-size: 36px;
+	font-weight: 900;
+	color: var(--primary-color);
+	font-family: var(--primary-font);
+}
+.degree {
+	font-size: 30px;
+	font-weight: 600;
+	font-family: var(--primary-font);
+	color: var(--main-color);
+}
+.designation {
+	font-size: 20px;
+	margin: 20px 0;
+	color: var(--text-color);
+	font-weight: 500;
+}
+.company-about-detail p {
+	font-size: 18px;
+	color: var(--text-color);
+}
+.company-about-image img {
+	max-width: 100%;
+}
+
+/* founder and ceo section css end */
+
+/* our associates css start */
+
+.our-associates {
+	padding: 50px 0;
+}
+.associates-image img {
+	max-width: 100%;
+}
+
+/* our associates css end */
+
+/* our expert team section css start */
+
+.our-expert-team {
+	background-color: var(--bg-color);
+	padding: 50px 0;
+}
+.our-team {
+	margin-top: 30px;
+}
+.our-team span img {
+	max-width: 100%;
+}
+.our-team h5 {
+	font-size: 18px;
+	margin: 10px 0 5px;
+	color: var(--primary-color);
+	font-weight: 600;
+}
+.our-team label {
+	font-size: 16px;
+	color: var(--main-color);
+}
+
+/* our expert team section css end */
+
+/* our portfolio section css start */
+
+.our-portfolio {
+	background-color: var(--bg-color);
+	padding: 50px 0;
+}
+.service-portfolio-box {
+	margin-top: 50px;
+	text-align: center;
+}
+.service-portfolio-box h5 {
+	font-size: 25px;
+	margin: 10px 0;
+	font-weight: 600;
+	color: var(--primary-color);
+}
+.service-portfolio-box h5 span {
+	color: var(--main-color);
+}
+.service-portfolio-box  p {
+	font-size: 18px;
+	color: var(--text-color);
+}
+.service-portfolio-box p a {
+	text-decoration: underline;
+	color: var(--primary-color);
+}
+
+/* our portfolio section css end */
+
+/*  why choose squadron section css start  */
+
+.why-choose {
+	padding: 50px 0;
+}
+
+/*  why choose squadron section css end  */
+
+/* our product range section css start */
+
+.product-range {
+	padding: 50px 0;
+}
+
+/* our product range section css end */
+
+/*  Api's Section css start */
+
+.product-detail {
+	padding: 50px 0;
+}
+.product-bg-color {
+	background-color: var(--bg-color);
+}
+.product-image img {
+	max-width: 100%;
+}
+.product-description h5 {
+	font-size: 22px;
+	font-weight: 600;
+	color: var(--primary-color);
+}
+.product-description p {
+	font-size: 18px;
+	color: var(--text-color);
+	margin: 20px 0;
+}
+.product-description a {
+	font-size: 18px;
+	color: var(--primary-color);
+	padding: 10px 25px;
+	border: 2px solid var(--primary-color);
+	font-family: var(--primary-font);
+	font-weight: 600;
+	display: inline-flex;
+	transition: all 0.5s;
+}
+.product-description a:hover {
+	box-shadow: inset 5em 0 0 0 var(--primary-color), inset -5em 0 0 0 var(--primary-color);
+	border-color: var(--primary-color);
+	color: var(--white-color);
+}
+
+/*  Api's Section css end */
+
+/* contact us section css start */
+
+.contact-detail {
+	padding: 50px 0;
+}
+.company-name {
+	font-size: 20px;
+	margin: 20px 0;
+	color: var(--text-color);
+	font-weight: 500;
+}
+.contact-informatation ul {
+	padding: 0;
+	list-style-type: none;
+	margin-bottom: 0;
+}
+.contact-informatation ul li {
+	display: flex;
+	align-items: flex-start;
+	margin: 10px 0;
+	font-size: 20px;
+	font-weight: 500;
+	color: var(--text-color);
+	word-break: break-all;
+}
+.contact-informatation ul li img {
+	display: flex;
+	min-width: 30px;
+	margin-right: 10px;
+}
+.enquiry-detail {
+	padding: 30px 50px;
+	background: var(--main-color);
+}
+.enquiry-detail h4 {
+	font-size: 25px;
+	font-weight: 900;
+	color: white;
+	margin-bottom: 20px;
+	font-family: var(--primary-font);
+}
+.enquiry-detail form input, .enquiry-detail form textarea {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 8px 10px;
+	border: 1px solid #fff;
+	background: transparent;
+	color: #fff;
+	font-size: 17px;
+}
+.enquiry-detail form textarea {
+	height: 100px;
+	resize: none;
+}
+.enquiry-detail form button , .jobs-form button {
+	font-size: 18px;
+	padding: 5px 23px;
+	border: 2px solid var(--primary-color);
+	font-family: var(--primary-font);
+	font-weight: 600;
+	transition: all 0.5s;
+	background: var(--primary-color);
+	color: var(--white-color);
+	text-transform: uppercase;
+	border-radius: 5px;
+}
+.enquiry-detail form button:hover , .jobs-form button:hover {
+	box-shadow: inset 8em 0 0 0 var(--white-color), inset -8em 0 0 0 var(--white-color);
+	border-color: var(--white-color);
+	color: var(--primary-color);
+}
+.jobs-form button:hover {
+	border: 2px solid var(--primary-color);
+}
+.map-section {
+	width: 100%;
+	height: 480px;
+	overflow: hidden;
+}
+.map-section iframe {
+	width: 100%;
+	height: 550px;
+	margin-top: -70px;
+	border: 0;
+}
+
+/* contact us section css end */
+
+/* current opening css start */
+
+.current-opening {
+	padding: 50px 0;
+}
+.current-opening-box, .benefits-box {
+	text-align: center;
+	border: 1px solid var(--primary-color);
+	border-radius: 20px;
+	margin-top: 30px;
+	padding-top: 20px;
+	overflow: hidden;
+}
+.current-opening-box h4 , .modal-header h3 , .benefits-box h4 {
+	font-size: 23px;
+	font-weight: 900;
+	color: var(--main-color);
+	margin: 10px 0 5px;
+	font-family: var(--primary-font);
+}
+.modal-header h3 {
+	color: var(--primary-color);
+	margin: 0;
+}
+.current-opening-box small {
+	display: flex;
+	justify-content: center;
+	font-size: 15px;
+	color: var(--text-color);
+}
+.current-opening-box a {
+	font-size: 20px;
+	padding: 6px 0;
+	display: flex;
+	justify-content: center;
+	background: var(--primary-color);
+	margin-top: 10px;
+	color: var(--white-color);
+	font-weight: 600;
+}
+.modal-dialog {
+	max-width: 800px;
+	margin: 1.75rem auto;
+}
+.modal-header {
+	border-bottom: unset;
+	padding-bottom: 0;
+}
+.modal-body {
+	padding: 0 1rem 2rem;
+}
+.jobs-form label {
+	font-size: 16px;
+	color: var(--main-color);
+	font-weight: 500;
+	font-family: var(--primary-font);
+	margin-top: 15px;
+}
+.jobs-form input {
+	width: 100%;
+	padding: 6px 5px;
+	margin-top: 5px;
+	border: 1px solid var(--main-color);
+	border-radius: 5px;
+	background: var(--bg-color);
+	font-size: 15px;
+	color: var(--black-color);
+}
+.jobs-form button {
+	margin-top: 15px;
+	text-transform: none;
+}
+
+/* current opening css end */
+
+/* benifit css start */
+
+.benifits-section {
+	padding: 50px 0;
+	background-color: var(--bg-color);
+}
+ .benefits-box {
+	height: 200px;
+ }
+
+/* benifit css end */
+
+/* via email css start */
+
+.via-email span {
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 0 10px rgba(0,0,0,0.25);
+	margin-bottom: 30px;
+	border-radius: 10px;
+	margin: 0 auto 50px;
+	flex-direction: column;
+	font-size: 20px;
+	color: var(--main-color);
+	font-family: var(--primary-font);
+}
+.via-email span a {
+	color: var(--primary-color);
+	font-style: italic;
+	font-weight: 900;
+	font-size: 25px;
+}
+.via-email span a:hover {
+	color: var(--main-color);
+}
+
+/* via email css end */

@@ -1,0 +1,299 @@
+@media (max-width: 1199px) {
+    .banner-section {
+        height: 600px;
+    }
+    .banner-content h1 {
+        font-size: 45px;
+    }
+    .section-title h3 {
+        font-size: 28px;
+    }
+    .tagline {
+	    font-size: 20px;
+        margin-right: 0;
+    }
+    .section-title p {
+        font-size: 16px;
+    }
+    .b-c-text, .company-about-detail p {
+	    font-size: 16px;
+    }
+    .business-box {
+        height: 300px;
+    }
+    .key-image {
+        height: 180px;
+    }
+    .b-k-element-content h4 {
+        font-size: 20px;
+        min-height: 50px;
+    }
+    .counter-text .count, .counter-plus-icon {
+        font-size: 38px;
+    }
+    .f-description {
+        font-size: 14px;
+    }
+    .company-info li {
+        display: flex;
+        align-items: center;
+    }
+    .company-info li a {
+        word-break: break-all;
+    }
+    .company-about-detail h4 {
+        font-size: 30px;
+    }
+    .degree {
+        font-size: 25px;
+    }
+    .designation {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    .enquiry-detail {
+        padding: 20px 15px;
+    }
+}
+@media(max-width:991px) {
+    .top-border {
+        height: 10px;
+    }
+    .container {
+        padding: 0 15px;
+    }
+    .h-company-info {
+        display: none;
+    }
+    .header {
+        padding: 10px 0px;
+    }
+    .navbar-toggler {
+        position: absolute;
+        top: -55px;
+        right: 15px;
+        padding: 0;
+    }
+    .navbar-content {
+        padding: 0;
+    }
+    .navbar {
+        position: absolute;
+        width: 100%;
+        left: 0;
+    }
+    #navbarSupportedContent {
+        background-color: var(--main-color);
+        z-index: 1;
+    }
+    .nav-item .nav-link {
+        margin-right: 0;
+        padding: 5px 15px !important;
+    }
+    .nav-item .nav-link.active, .nav-item .nav-link:hover {
+        background-color: var(--primary-color) !important;
+        color: var(--white-color) !important;
+    }
+    .banner-section {
+        height: 500px;
+        text-align: center;
+    }
+    .banner-content h1 {
+        font-size: 40px;
+    }
+    .banner-content span {
+        font-size: 20px;
+    }
+    .banner-section::before {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.25);
+    }
+    .banner-content {
+        position: relative;
+    }
+    .about-right-image {
+        margin-bottom: 20px;
+    }
+    .about-right-image img {
+        width: 100%;
+    }
+    .section-title h3 {
+        font-size: 26px;
+    }
+    .section-title a {
+        font-size: 16px;
+        padding: 6px 20px;
+    }
+    .main-about-section, .business-connect, .business-key-elements, .five-whys-section, .our-accreditation, .counter-section, .happy-customer, .quick-connect, .footer-section, .company-overview, .mission-section, .core-principle, .company-about, .our-associates, .contact-detail {
+        padding: 30px 0;
+    }
+    .icon-round-box {
+        width: 100px;
+        height: 100px;
+    }
+    .icon-round-box img {
+        height: 60px;
+    }
+    .five-whys-section .section-title p {
+        margin-top: 10px;
+    }
+    .counter-icon img {
+        height: 60px;
+    }
+    .counter-text .count, .counter-plus-icon {
+        font-size: 30px;
+    }
+    .counter-b-text {
+        font-size: 16px;
+    }
+    .happy-customer-slider {
+        margin-top: 20px;
+    }
+    .inner-banner {
+        height: 300px;
+    }
+    .company-information p, .company-information-more-detail p, .services-overview p, .services-information-more-detail p {
+        font-size: 17px;
+    }
+    .c-info-box-content h5 {
+        font-size: 20px;
+    }
+    .c-info-box-content p {
+        font-size: 16px;
+    }
+    .core-principle-image {
+        margin-bottom: 20px;
+    }
+    .company-about-image {
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+    }
+    .company-about-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        max-width: unset;
+    }
+    .company-about-detail {
+        margin-top: 15px;
+    }
+    .associates-image {
+        margin-top: 20px;
+    }
+    .inner-banner h3 {
+        font-size: 25px;
+    }
+    .enquiry-detail {
+        margin-top: 20px;
+    }
+}
+@media(max-width:767px) {
+    .banner-content h1 {
+        font-size: 35px;
+    }
+    .business-box, .business-key-elements-box, .certification-box, .company-overview-info {
+        margin-top: 20px;
+    }
+    ul.f-link li a {
+        font-size: 14px;
+    }
+    .copyright {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .f-social-icon {
+        justify-content: center;
+    } 
+    .map-section {
+        height: 300px;
+    }
+    .map-section iframe {
+        height: 370px;
+    }
+}
+@media(max-width:575px) {
+    .banner-section {
+        height: 400px;
+    }
+    .banner-content h1 {
+        font-size: 25px;
+    }
+    .banner-content span {
+        font-size: 16px;
+    }
+    .section-title h3 {
+        font-size: 22px;
+    }
+    .tagline {
+        font-size: 17px;
+    }
+    .business-box {
+        height: 260px;
+    }
+    .logo a img {
+        height: 43px;
+    }
+    .navbar-toggler {
+        top: -44px;
+    }
+    .nav-item .nav-link {
+        font-size: 15px;
+    }
+    .b-k-element-content p, .b-k-element-content a , .five-whys-content ul li, .breadcrumb .breadcrumb-item, .company-information p, .company-information-more-detail p, .services-overview p, .services-information-more-detail p , .contact-informatation ul li, .enquiry-detail form button{
+        font-size: 16px;
+    }
+    .b-k-element-content a {
+        margin-top: 15px;
+    }
+    .b-k-element-content a img {
+        width: 25px;
+    }
+    .five-whys-content h4 {
+        font-size: 20px;
+    }
+    .five-whys-content ul li img {
+        width: 50px;
+        margin-right: 10px;
+    }
+    .f-social-icon li {
+        margin-left: 5px;
+    }
+    .copyright {
+        font-size: 13px;
+    }
+    .counter-b-text {
+        font-size: 14px;
+    }
+    .counter-text .count, .counter-plus-icon, .company-about-detail h4 {
+        font-size: 22px;
+    }
+    .inner-banner h3 {
+        font-size: 18px;
+    }
+    .inner-banner {
+        height: 230px;
+    }
+    .company-about-image {
+        width: 220px;
+        height: 220px;
+    }
+    .degree, .designation {
+        font-size: 18px;
+    }
+    .f-logo a img {
+        height: 35px;
+    }
+    .enquiry-detail h4 {
+        font-size: 20px;
+    }
+    .enquiry-detail form input, .enquiry-detail form textarea {
+        font-size: 15px;
+    }
+}
