@@ -761,6 +761,9 @@ ul.f-link li a:hover {
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 }
+.c-info-box-content span img {
+	height: 93px;
+}
 
 /* mission vison and values section css end */
 
