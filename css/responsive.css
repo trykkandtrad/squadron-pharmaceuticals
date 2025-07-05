@@ -19,7 +19,7 @@
 	    font-size: 16px;
     }
     .business-box {
-        height: 300px;
+        height: 550px;
     }
     .key-image {
         height: 180px;
@@ -193,6 +193,12 @@
     .enquiry-detail {
         margin-top: 20px;
     }
+    .about-right-image {
+        width: 50%;
+    }
+    .business-box {
+	    height: 450px;
+    }
 }
 @media(max-width:767px) {
     .banner-content h1 {
@@ -216,6 +222,9 @@
     }
     .map-section iframe {
         height: 370px;
+    }
+    .business-box {
+        height: 580px;
     }
 }
 @media(max-width:575px) {
@@ -295,5 +304,15 @@
     }
     .enquiry-detail form input, .enquiry-detail form textarea {
         font-size: 15px;
+    }
+    .about-right-image {
+        width: 100%;
+    }
+    .business-box {
+        height: 450px;
+        padding: 20px 10px 0;
+    }
+    .b-c-text, .business-box p {
+        margin-top: 15px;
     }
 }
